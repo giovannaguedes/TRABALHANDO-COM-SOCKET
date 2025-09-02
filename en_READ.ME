@@ -1,0 +1,55 @@
+WORKING-WITH-SOCKET
+
+Python code setting up a socket. Automated.
+
+⚠️ For educational purposes only • Developed by M!ss s3c
+
+📝 Guide: Creating and Running a Python Script with Socket
+
+This script will attempt to connect to an IP address and port provided by the user.
+It does not perform any unauthorized actions: it only checks whether the port is open or closed.
+
+1. Create the script file
+
+In the terminal:
+
+nano script4.3.py
+
+2. Python Code (corrected and explained)
+
+Paste the provided code.
+
+3. Give execution permission (optional)
+
+If you want to run it directly as a program:
+
+chmod +x script4.3.py
+
+4. Run the script
+./script4.3.py
+
+5. Example of execution
+M!ss s3c - Port Test
+Enter IP: 127.0.0.1
+Enter port: 22
+Port 22 is open on host 127.0.0.1
+
+
+Or:
+
+M!ss s3c - Port Test
+Enter IP: 127.0.0.1
+Enter port: 8080
+Port 8080 is closed on host 127.0.0.1
+
+👉 What you learned here
+
+import socket → library to work with networking in Python.
+
+socket.socket() → creates a TCP socket.
+
+connect_ex() → attempts a connection; returns 0 if successful (port is open).
+
+Timeout (settimeout) → prevents the script from freezing.
+
+Close the socket (close()) → always important to release resources.
